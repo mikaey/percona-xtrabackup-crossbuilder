@@ -17,7 +17,7 @@ is one of the platforms supported by buildx (such as `linux/arm64`, `linux/arm/v
 ## How to run
 
 1. Create a directory called `output` (or call it something else, I'm not your mother).
-2. Run `docker run <image_id> -v ${PWD}/output:/output`, where `<image_id>` is the image ID that was spit
+2. Run `docker run -v ${PWD}/output:/output <image_id>`, where `<image_id>` is the image ID that was spit
 out above. If you went against my advice and named your output folder something other than `output`,
 change `${PWD}/output` to the absolute path to your output folder.
 3. Wait for the build to finish.  (It'll take a while -- it takes several hours on my hardware.)  Once the
